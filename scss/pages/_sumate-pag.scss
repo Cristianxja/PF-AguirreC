@@ -1,0 +1,61 @@
+/* PAGINA SUMATE */
+
+@import "../variables";
+
+.datos {
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 250px;
+	margin-bottom: 100px;
+	padding: 30px;
+	border: #000 solid 5px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: $fondo-difu;
+	backdrop-filter: blur(10px);
+	font-weight: bold;
+	.titulo-sumate {
+		margin-bottom: 30px;
+		color: #000;
+	}
+	p {
+		font-size: 20px;
+		margin-bottom: 50px;
+		color: #000;
+	}
+	input {
+		text-transform: capitalize;
+		display: block;
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 250px;
+	}
+	textarea {
+		width: 250px;
+		resize: none;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+	.boton {
+		margin-top: 30px;
+		width: 60px;
+		height: 30px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+@media screen and (max-width: 715px) {
+	.datos {
+		width: 400px;
+		.titulo-sumate {
+			font-size: 20px;
+		}
+		p {
+			font-size: 15px;
+		}
+	}
+}
+/* FIN PAGINA SUMATE */

@@ -1,0 +1,39 @@
+/* INICIO BARRA DE NAVEGACION*/
+
+@import "variables";
+
+#th-titulo {
+	width: 100%;
+	background-color: $color-fondo;
+	backdrop-filter: $difuminado;
+	padding: 30px;
+	position: fixed;
+	top: 0px;
+	text-shadow: $sombras;
+	z-index: 1000;
+	a {
+		color: #000;
+		font-size: 40px;
+		font-weight: 600;
+	}
+}
+#nav-deco {
+	a {
+		font-size: 25px;
+		text-transform: uppercase;
+		font-weight: 600;
+		padding: 15px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+@media screen and (max-width: 535px) {
+	#th-titulo {
+		a {
+			font-size: 25px;
+		}
+	}
+}
+
+/* FIN BARRA DE NAVEGACION*/

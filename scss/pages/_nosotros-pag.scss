@@ -1,0 +1,66 @@
+/* PAGINA NOSOTROS */
+
+@import "../variables";
+
+.contenedor {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+	justify-items: center;
+	align-items: center;
+}
+.historia {
+	width: 800px;
+	height: auto;
+	margin-top: 250px;
+	padding: 30px;
+	border: solid #000;
+	color: #fff;
+	background-color: $fondo-difu;
+	backdrop-filter: blur(10px);
+	h1 {
+		text-transform: uppercase;
+		color: #000;
+		font-weight: 600;
+		margin-bottom: 35px;
+	}
+	p {
+		font-size: 20px;
+		font-weight: bold;
+		color: #000;
+	}
+}
+.video-deco {
+	margin-top: 300px;
+}
+@media screen and (max-width: 1145px) {
+	.contenedor {
+		grid-template-columns: repeat(1,1fr);
+	}
+	.historia {
+		width: 600px;
+	}
+}
+@media screen and (max-width: 770px) {
+	.contenedor {
+		grid-template-columns: repeat(1,1fr);
+	}
+	.historia {
+		width: 600px;
+		width: 450px;
+		p {
+			font-size: 18px;
+			font-size: 15px;
+		}
+	}
+	.video-deco {
+		margin-top: 100px;
+		iframe {
+			width: 600px;
+			height: 400px;
+			width: 450px;
+			height: 450px;
+		}
+	}
+}
+/* FIN PAGINA NOSOTROS */

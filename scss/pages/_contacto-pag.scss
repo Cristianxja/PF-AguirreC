@@ -1,0 +1,86 @@
+/* PAGINA CONTACTO */
+
+@import "../variables";
+
+.cuadros {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	text-transform: uppercase;
+	margin-top: 250px;
+	margin-bottom: 250px;
+	.caja {
+		border: 5px solid #000;
+		border-radius: 30px;
+		width: 500px;
+		height: auto;
+		padding: 30px;
+		background-color: $fondo-difu;
+		backdrop-filter: blur(10px);
+		h1{
+			font-weight: bold;
+			margin: 50px;
+			text-align: center;
+			color: #000;
+		}
+		h2 {
+			font-weight: bold;
+			margin: 50px;
+			text-align: center;
+			color: #000;
+		}
+	}
+}
+.caja {
+	h2 {
+		display: block;
+	}
+	span {
+		font-weight: bold;
+		text-align: center;
+		margin: 30px;
+	}
+	input {
+		text-transform: capitalize;
+		margin: 0 auto;
+		margin-bottom: 7px;
+		width: 250px;
+		height: 30px;
+	}
+	textarea {
+		margin: 0 auto;
+		resize: none;
+		width: 250px;
+	}
+	.boton-e {
+		margin-top: 30px;
+		width: 60px;
+		height: 30px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+span {
+	display: block;
+}
+input {
+	display: block;
+}
+textarea {
+	display: block;
+}
+@media screen and (max-width: 1145px) {
+	.cuadros {
+		grid-template-columns: repeat(1,1fr);
+		gap: 50px;
+	}
+}
+@media screen and (max-width: 720px) {
+	.cuadros {
+		.caja {
+			width: 400px;
+		}
+	}
+}
+/* FIN PAGINA CONTACTO */

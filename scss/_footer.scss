@@ -1,0 +1,83 @@
+/*INICIO FOOTER*/
+
+@import "variables";
+
+.footer {
+	width: 100%;
+	background-color: $color-fondo;
+	backdrop-filter: $difuminado;
+	padding: 20px;
+	margin-top: 150px;
+	position: relative;
+	.caja-1 {
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+		padding: 45px 0px;
+		.caja {
+			h2 {
+				color: #000;
+				text-decoration: underline;
+				text-transform: uppercase;
+				margin-bottom: 25px;
+				font-size: 20px;
+				text-shadow: $sombras;
+			}
+			em {
+				color: #000;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+				text-shadow: $sombras;
+			}
+		}
+		.redes {
+			a {
+				text-decoration: none;
+			}
+			i {
+				display: inline-block;
+				text-decoration: none;
+				width: 45px;
+				height: 45px;
+				line-height: 45px;
+				color: #000;
+				margin-right: 5px;
+				background-color: #fff;
+				border-radius: 30px;
+				text-align: center;
+				&:hover {
+					background-color: #000;
+					color: #fff;
+					transition: all 300ms ease;
+				}
+			}
+		}
+	}
+	.caja-2 {
+		padding: 15px 10px;
+		text-align: center;
+		color: #000;
+		font-size: 15px;
+		text-transform: capitalize;
+	}
+}
+@media screen and (max-width: 715px) {
+	.footer {
+		.caja-1 {
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 50px;
+		}
+	}
+}
+@media screen and (max-width: 555px) {
+	.footer {
+		.caja-1 {
+			grid-template-columns: repeat(1, 1fr);
+			grid-gap: 50px;
+		}
+	}
+}
+/*FIN FOOTER*/
